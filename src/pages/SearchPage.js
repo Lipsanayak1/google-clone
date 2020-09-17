@@ -72,9 +72,9 @@ function SearchPage() {
       {term && (
         <div className="searchPage__results">
           <p className="searchPage__resultCount">
-            About {data?.searchInformation.formattedTotalResults} results{" "}
-            {data?.searchInformation.formattedSearchTime} seconds for {term}
-            {data?.items.map((item) => (
+            About {data?.searchInformation?.formattedTotalResults} results{" "}
+            {data?.searchInformation?.formattedSearchTime} seconds for {term}
+            {data?.items?.map((item) => (
               <div className="searchPage__result">
                 <a href={item.link}>
                   {item.pagemap?.cse_image?.length > 0 &&
